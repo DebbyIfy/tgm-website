@@ -15,8 +15,8 @@
 <body>
   <header class="nav">
     <a href="index.html"><img src="assets/images/tgm-logo.png" alt="That Good Media"></a>
-    <nav class="nav-links"><a href="work.html">Work</a><a href="services.html">Services</a><a href="about.html">About</a><a href="academy.html">Academy</a><a class="is-active" href="contact.html">Contact</a></nav>
-    <a class="pill-button" href="mailto:contactus@thatgoodmedia.org">Email us</a>
+    <nav class="nav-links"><a href="work.html">Work</a><a href="services.html">Services</a><a href="about.html">About</a><a href="academy.html">Academy</a><a class="is-active" href="contact.html">Contact</a><a class="pill-button" href="mailto:contactus@thatgoodmedia.org">Email us</a></nav>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false"><span></span><span></span><span></span></button>
   </header>
 
   <main>
@@ -29,22 +29,29 @@
     </section>
 
     <section class="section">
-      <div class="inner contact-grid">
-        <div>
-          <div class="contact-item"><h3>Phone</h3><a href="tel:+2348051652305">+234 805 165 2305</a></div>
-          <div class="contact-item"><h3>Email</h3><a href="mailto:contactus@thatgoodmedia.org">contactus@thatgoodmedia.org</a><br><a href="mailto:jobs@thatgoodmedia.org">jobs@thatgoodmedia.org</a></div>
-          <div class="contact-item"><h3>Address</h3><p class="muted">Plot 20a Hunponu-Wusu Road, Lekki Phase 1, Lekki 106104, Lagos</p></div>
-          <div class="contact-item"><h3>Follow our socials</h3><a href="https://www.instagram.com/ThatGoodMediahq">Instagram</a> · <a href="https://x.com/thatgoodmediahq">X</a> · <a href="https://www.facebook.com/ThatGoodMediahq">Facebook</a></div>
-        </div>
-        <div class="card">
-          <h3>That Good Scoop</h3>
-          <p>Your monthly digest on what is happening at TGM and beyond: industry insights, thought leadership, news, updates, open roles and more.</p>
-          <form class="form form-spaced">
-            <input type="text" name="name" placeholder="Name">
-            <input type="email" name="email" placeholder="Email address">
-            <textarea name="message" placeholder="Tell us what you need"></textarea>
-            <a class="pill-button gold" href="mailto:contactus@thatgoodmedia.org">Send inquiry</a>
-          </form>
+      <div class="inner">
+        <div class="contact-items">
+          <div class="contact-item">
+            <h3>Phone</h3>
+            <a href="tel:+2348051652305">+234 805 165 2305</a>
+          </div>
+          <div class="contact-item">
+            <h3>Email</h3>
+            <p><strong>Inquiries, New business, Press + Media:</strong> <a href="mailto:contactus@thatgoodmedia.org">contactus@thatgoodmedia.org</a></p>
+            <p><strong>Jobs and Openings:</strong> <a href="mailto:jobs@thatgoodmedia.org">jobs@thatgoodmedia.org</a></p>
+          </div>
+          <div class="contact-item">
+            <h3>Address</h3>
+            <a href="https://maps.google.com/?q=Plot+20a+Hunponu-Wusu+Rd,+Lekki+Phase+1,+Lekki+106104,+Lagos" target="_blank" rel="noopener noreferrer">Plot 20a Hunponu-Wusu Rd, Lekki Phase 1, Lekki 106104, Lagos</a>
+          </div>
+          <div class="contact-item">
+            <h3>Follow Our Socials</h3>
+            <div class="social-links">
+              <a href="https://www.instagram.com/ThatGoodMediahq">Instagram</a>
+              <a href="https://x.com/thatgoodmediahq">X</a>
+              <a href="https://www.facebook.com/ThatGoodMediahq">Facebook</a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -59,5 +66,6 @@
     </div>
     <div class="footer-bottom"><span>© 2026 That Good Media</span><span>Lagos, Nigeria</span></div>
   </footer>
+  <script src="assets/js/nav.js"></script>
 </body>
 </html>

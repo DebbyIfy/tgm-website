@@ -21,8 +21,9 @@
       <a class="is-active" href="about.html">About</a>
       <a href="academy.html">Academy</a>
       <a href="contact.html">Contact</a>
+      <a class="pill-button" href="contact.html">Start a project</a>
     </nav>
-    <a class="pill-button" href="contact.html">Start a project</a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false"><span></span><span></span><span></span></button>
   </header>
 
   <main>
@@ -40,15 +41,16 @@
         <div class="grid three story-card-grid">
           <article class="card">
             <h3>Connecting possibilities</h3>
-            <p>Our journey started nearly a decade ago, when we launched That Good Media with one central purpose: to help people and brands speak their deepest truth with confidence.</p>
+            <p>Our journey started nearly a decade ago, when we launched That Good Media with one central purpose: <b>to help people and brands speak their deepest truth with confidence.</b></p>
           </article>
           <article class="card">
             <h3>Crafting excellence</h3>
-            <p>Since then, we have discovered newer ways to help brands stand out and survive storms with an expanding range of creative and strategic solutions.</p>
+            <p>Since then, we have discovered newer ways <b>to help brands stand out and survive storms</b> with an expanding range of creative and strategic solutions.<br>
+            Armed with an inclusive team of talented visionaries and <b>50+ years of combined industry experience</b>, we provide the clarity and direction that positions brands for relevance, growth, and long-term impact.</p>
           </article>
           <article class="card">
             <h3>Exceeding expectations</h3>
-            <p>From global businesses to cultural movements and independent initiatives, our clinical approach continues to deliver superior value with every project.</p>
+            <p>From large-scale global businesses to cultural movements and independent initiatives, our clinical approach to tackling complex challenges continues to earn us long-term value, as we continue to deliver superior value with every project.</p>
           </article>
         </div>
       </div>
@@ -71,12 +73,14 @@
 
     <section class="section">
       <div class="inner">
-        <div class="cta">
-          <div>
-            <h2>Get bi-weekly scoops of industry insights and updates.</h2>
-            <p>Subscribe for perspective, news, open roles, and updates from the TGM team.</p>
+        <div class="cta cta-scoop">
+          <h2>Get bi-weekly scoops of industry insights and updates</h2>
+          <div class="scoop-form-block">
+            <form class="subscribe-form" action="https://mailchi.mp/71cee569ab16/that-good-scoopcom" method="get" target="_blank" rel="noopener noreferrer">
+              <input type="email" name="EMAIL" placeholder="Your email address" required>
+              <button type="submit" class="pill-button gold">Subscribe</button>
+            </form>
           </div>
-          <a class="pill-button gold" href="contact.html">Subscribe</a>
         </div>
       </div>
     </section>
@@ -91,5 +95,6 @@
     </div>
     <div class="footer-bottom"><span>© 2026 That Good Media</span><span>Lagos, Nigeria</span></div>
   </footer>
+  <script src="assets/js/nav.js"></script>
 </body>
 </html>
