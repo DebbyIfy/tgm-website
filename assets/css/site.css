@@ -671,8 +671,8 @@ h1 {
   padding: 0 20px;
   border: 1.5px solid rgba(255,255,255,.4);
   border-radius: 999px;
-  background-color: transparent;
-  box-shadow: inset 0 0 0 100px rgba(255,255,255,.1);
+  background-color: rgba(255,255,255,.12);
+  box-shadow: none;
   color: #fff;
   -webkit-text-fill-color: #fff;
   font: inherit;
@@ -687,7 +687,7 @@ h1 {
 }
 .subscribe-form input[type="email"]:focus {
   border-color: rgba(255,255,255,.7);
-  box-shadow: inset 0 0 0 100px rgba(255,255,255,.15);
+  background-color: rgba(255,255,255,.18);
 }
 .footer {
   padding: 54px clamp(18px, 4vw, 54px) 30px;

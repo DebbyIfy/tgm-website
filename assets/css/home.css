@@ -268,7 +268,7 @@
     }
     .metrics {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(3, 1fr);
       border-top: 1px solid var(--line);
       border-bottom: 1px solid var(--line);
       margin-top: clamp(48px, 7vw, 86px);
@@ -276,6 +276,7 @@
     .metric {
       padding: 28px clamp(16px, 3vw, 36px);
       border-right: 1px solid var(--line);
+      text-align: center;
     }
     .metric:last-child { border-right: 0; }
     .metric strong {
