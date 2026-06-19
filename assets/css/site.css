@@ -608,7 +608,25 @@ h1 {
 .contact-item h3 { margin: 0 0 8px; }
 .contact-item p { margin: 0 0 6px; }
 .contact-item p:last-child { margin-bottom: 0; }
-.contact-item .social-links { display: flex; flex-direction: column; gap: 6px; }
+.contact-item .social-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.contact-item .social-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 0;
+}
+.contact-item .social-icon {
+  border-color: rgba(8, 8, 8, .18);
+  color: var(--ink);
+}
+.contact-item .social-link:hover .social-icon {
+  color: var(--purple);
+  border-color: rgba(113, 69, 164, .4);
+}
 .form {
   display: grid;
   gap: 14px;
