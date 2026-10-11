@@ -23,6 +23,24 @@ document.querySelectorAll('.nav').forEach(function (nav) {
 });
 
 (function () {
+  var bar = document.querySelector('.announce-bar');
+  if (!bar) return;
+
+  function syncHeight() {
+    document.body.style.setProperty('--announce-h', bar.offsetHeight + 'px');
+  }
+  syncHeight();
+  window.addEventListener('resize', syncHeight);
+
+  bar.querySelector('.announce-bar-close').addEventListener('click', function () {
+    document.documentElement.classList.add('ipn-bar-closed');
+    document.body.style.setProperty('--announce-h', '0px');
+    window.removeEventListener('resize', syncHeight);
+    try { sessionStorage.setItem('ipnBarClosed', '1'); } catch (e) {}
+  });
+})();
+
+(function () {
   var overlay = document.createElement('div');
   overlay.className = 'exit-modal-overlay';
   overlay.innerHTML =
