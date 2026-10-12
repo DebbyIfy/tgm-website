@@ -1862,3 +1862,13 @@ body:has(.announce-bar) { --announce-h: 41px; }
   .blog-grid { grid-template-columns: 1fr; }
   .blog-body p { font-size: 17px; }
 }
+
+/* ── Services: work section (moved from Work page) ── */
+.work-intro {
+  max-width: 720px;
+  margin: 20px 0 42px;
+  font-size: clamp(17px, 1.45vw, 20px);
+}
+#work {
+  scroll-margin-top: calc(var(--announce-h, 0px) + 80px);
+}
