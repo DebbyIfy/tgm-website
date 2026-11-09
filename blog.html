@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Blog | That Good Media</title>
-  <meta name="description" content="News, stories and updates from That Good Media and TGM Academy.">
+  <meta name="description" content="News, updates and hot takes: industry insights, fresh perspectives and ideas shaping PR, branding, talent and the creator economy.">
   <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
@@ -31,22 +31,59 @@
   </header>
 
   <main>
-    <section class="hero">
-      <div class="inner">
+    <section class="hero blog-hero">
+      <div class="blog-hero-slider" aria-hidden="true">
+        <img class="blog-hero-bg is-active" src="assets/images/blog/tgm-academy-cohort-1/cover.jpg" alt="">
+        <img class="blog-hero-bg" src="assets/images/blog/tgm-academy-cohort-1/group-jay-on-air.jpg" alt="">
+        <img class="blog-hero-bg" src="assets/images/blog/tgm-academy-cohort-1/seun-ajayi.jpg" alt="">
+        <img class="blog-hero-bg" src="assets/images/blog/right-influencer-for-your-brand/cover.jpg" alt="">
+        <img class="blog-hero-bg" src="assets/images/blog/tgm-academy-cohort-1/group-olufemi-oguntamu.jpg" alt="">
+      </div>
+      <div class="blog-hero-overlay"></div>
+      <div class="inner blog-hero-content">
         <div class="eyebrow">Blog</div>
-        <h1>News and stories from That Good Media.</h1>
-        <p>Updates from our work, our people and TGM Academy.</p>
+        <h1>News, Updates and Hot Takes</h1>
+        <p>Industry insights, fresh perspectives and ideas shaping PR, branding, talent and the creator economy.</p>
       </div>
     </section>
     <section class="section">
       <div class="inner">
         <div class="blog-grid">
+          <a class="blog-card" href="blog-right-influencer-for-your-brand">
+            <div class="blog-card-media"><img src="assets/images/blog/right-influencer-for-your-brand/cover.jpg" alt="Three colleagues reviewing work together on a laptop" loading="lazy"></div>
+            <div class="blog-card-body">
+              <span class="blog-card-tag">Influencer Marketing</span>
+              <h2>Your Favourite Influencer Might Be Wrong for Your Brand: Why Finding the Right Influencers Matters</h2>
+              <p>Finding someone to promote a product is relatively easy. Finding someone who can promote it effectively requires considerably more thought.</p>
+              <span class="blog-card-cta">Read story <span aria-hidden="true">&rarr;</span></span>
+            </div>
+          </a>
+          <a class="blog-card" href="blog-originality-is-overrated">
+            <div class="blog-card-media blog-card-media--banner"><img src="assets/images/blog/originality-is-overrated/cover.jpg" alt="Originality is Overrated: how Isbae U copied his way into building one of Nigeria's biggest interview shows" loading="lazy"></div>
+            <div class="blog-card-body">
+              <span class="blog-card-tag">That Good Scoop · Issue 11</span>
+              <time class="blog-card-date" datetime="2026-09-24">September 24, 2026</time>
+              <h2>Originality is Overrated</h2>
+              <p>Don't obsess over being the first person to have an idea.</p>
+              <span class="blog-card-cta">Read story <span aria-hidden="true">&rarr;</span></span>
+            </div>
+          </a>
           <a class="blog-card" href="blog-tgm-academy-first-cohort">
             <div class="blog-card-media"><img src="assets/images/blog/tgm-academy-cohort-1/cover.jpg" alt="Two TGM Academy Cohort 1 students holding TGM Academy gift bags"></div>
             <div class="blog-card-body">
               <span class="blog-card-tag">TGM Academy · Press release</span>
               <h2>TGM Academy Launches First Cohort, Kickstarting Mission to Train 10,000 Talent Managers By 2030</h2>
               <p>The inaugural cohort began on September 7, 2026, with industry voices including Ann Obaseki, Olufemi Oguntamu and Seun Ajayi joining the first Fireside Chat.</p>
+              <span class="blog-card-cta">Read story <span aria-hidden="true">&rarr;</span></span>
+            </div>
+          </a>
+          <a class="blog-card" href="blog-olodo-formula-part-2">
+            <div class="blog-card-media blog-card-media--banner"><img src="assets/images/blog/olodo-formula-part-2/cover.jpg" alt="The Olodo Formula, Part Two: a playbook for connection, speed and virality" loading="lazy"></div>
+            <div class="blog-card-body">
+              <span class="blog-card-tag">That Good Scoop · Issue 07</span>
+              <time class="blog-card-date" datetime="2026-08-11">August 11, 2026</time>
+              <h2>The Olodo Formula: Part II</h2>
+              <p>If you want to change what people consume, change how you package it.</p>
               <span class="blog-card-cta">Read story <span aria-hidden="true">&rarr;</span></span>
             </div>
           </a>
@@ -58,20 +95,19 @@
   <footer class="footer">
       <div class="footer-cta">
         <div class="footer-cta-card">
-          <h4>Newsletter</h4>
-          <p class="footer-cta-title">Stories, insights and opportunities from That Good Media, straight to your inbox.</p>
-          <!-- TODO: replace action with the Mailchimp embedded form URL (…list-manage.com/subscribe/post?u=…&id=…) -->
-          <form class="newsletter-form" action="#mailchimp-form-url" method="post" target="_blank" novalidate>
+          <h4>That Good Scoop</h4>
+          <p class="footer-cta-title">Subscribe to That Good Scoop! Our bi-weekly drop of fresh ideas on PR, branding, influencer marketing, growth, plus latest industry news, and loads of fun.</p>
+          <form class="newsletter-form" action="https://thatgoodmedia.us6.list-manage.com/subscribe/post?u=6b8bed19071e6b182c1cb8ed9&amp;id=c7d3b25a07&amp;f_id=00991de2f0" method="post" target="_blank">
             <label class="visually-hidden" for="newsletter-email">Email address</label>
             <input type="email" name="EMAIL" id="newsletter-email" placeholder="Your email address" autocomplete="email" required>
-            <div class="visually-hidden" aria-hidden="true"><input type="text" name="b_honeypot" tabindex="-1" value=""></div>
+            <div class="visually-hidden" aria-hidden="true"><input type="text" name="b_6b8bed19071e6b182c1cb8ed9_c7d3b25a07" tabindex="-1" value=""></div>
             <button type="submit" class="pill-button gold">Subscribe</button>
           </form>
         </div>
         <div class="footer-cta-card">
           <h4>Influencer Partnership Network</h4>
-          <p class="footer-cta-title">Are you a creator? Join the IPN to partner with brands on campaigns that fit your voice.</p>
-          <a class="pill-button footer-cta-button" href="https://forms.cloud.microsoft/r/AKnhxa2GSM" target="_blank" rel="noopener noreferrer">Join the IPN <span aria-hidden="true">&rarr;</span></a>
+          <p class="footer-cta-title">Creators! Your influence deserves the right opportunities. Tap into relevant brand partnerships, events, activations and more.</p>
+          <a class="pill-button footer-cta-button" href="https://forms.cloud.microsoft/r/AKnhxa2GSM" target="_blank" rel="noopener noreferrer">Join the Network <span aria-hidden="true">&rarr;</span></a>
         </div>
       </div>
       <div class="footer-grid">
@@ -115,5 +151,17 @@
     </footer>
   <script src="assets/js/nav.js"></script>
   <script src="assets/js/reveal.js"></script>
+  <script>
+  (function () {
+    var slides = document.querySelectorAll('.blog-hero-slider .blog-hero-bg');
+    if (slides.length < 2) return;
+    var current = 0;
+    setInterval(function () {
+      slides[current].classList.remove('is-active');
+      current = (current + 1) % slides.length;
+      slides[current].classList.add('is-active');
+    }, 5000);
+  })();
+  </script>
 </body>
 </html>

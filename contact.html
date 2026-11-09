@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Contact | That Good Media</title>
-  <meta name="description" content="Work with That Good Media in Lagos. Contact us for PR, branding, talent management, events, and growth solutions.">
+  <title>Start a Project | That Good Media</title>
+  <meta name="description" content="Start a project with That Good Media in Lagos. Tell us about your needs and business goals: PR, influencer marketing, personal branding, content and events.">
   <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
@@ -28,9 +28,87 @@
   <main>
     <section class="hero">
       <div class="inner">
-        <div class="eyebrow">Contact</div>
-        <h1>Work with us.</h1>
-        <p>Bring us the brand, brief, launch, event, or audience problem. We will help shape the strategy and the creative path forward.</p>
+        <div class="eyebrow">Start a project</div>
+        <h1>Your solution is a few steps away.</h1>
+        <p>Get your brand noticed and positively remembered by the right people. Tell us more about your needs and business goals in the form below.</p>
+      </div>
+    </section>
+
+    <section class="section project-form-section">
+      <div class="inner project-form-grid">
+        <form class="project-form" id="project-form" novalidate>
+          <div class="project-form-row">
+            <label class="project-field project-field--full">
+              <span>Your name</span>
+              <input type="text" name="name" autocomplete="name" required>
+            </label>
+            <label class="project-field">
+              <span>Email</span>
+              <input type="email" name="email" autocomplete="email" required>
+            </label>
+            <label class="project-field">
+              <span>Phone number</span>
+              <input type="tel" name="phone" autocomplete="tel">
+            </label>
+            <label class="project-field project-field--full">
+              <span>Tell us about your project</span>
+              <textarea name="project" rows="5"></textarea>
+            </label>
+          </div>
+
+          <fieldset class="project-options">
+            <legend>What do you need?</legend>
+            <div class="option-chips">
+              <label class="option-chip"><input type="checkbox" name="services" value="PR &amp; Media"><span>PR &amp; Media</span></label>
+              <label class="option-chip"><input type="checkbox" name="services" value="Influencer Marketing"><span>Influencer Marketing</span></label>
+              <label class="option-chip"><input type="checkbox" name="services" value="Personal Branding"><span>Personal Branding</span></label>
+              <label class="option-chip"><input type="checkbox" name="services" value="Content &amp; Social Media"><span>Content &amp; Social Media</span></label>
+              <label class="option-chip"><input type="checkbox" name="services" value="Events Management and Guest listing"><span>Events Management and Guest listing</span></label>
+              <label class="option-chip"><input type="checkbox" name="services" value="Something Else?" data-reveals="services-other"><span>Something Else?</span></label>
+            </div>
+            <label class="project-field option-other" id="services-other" hidden>
+              <span class="visually-hidden">Something else</span>
+              <input type="text" name="servicesOther" placeholder="Tell us what else you need">
+            </label>
+          </fieldset>
+
+          <fieldset class="project-options">
+            <legend>How can we help?</legend>
+            <div class="option-chips">
+              <label class="option-chip"><input type="checkbox" name="help" value="Build the strategy"><span>Build the strategy</span></label>
+              <label class="option-chip"><input type="checkbox" name="help" value="Execute the campaign"><span>Execute the campaign</span></label>
+              <label class="option-chip"><input type="checkbox" name="help" value="Handle it end-to-end"><span>Handle it end-to-end</span></label>
+              <label class="option-chip"><input type="checkbox" name="help" value="Work with your existing team"><span>Work with your existing team</span></label>
+              <label class="option-chip"><input type="checkbox" name="help" value="I am still figuring it out"><span>I am still figuring it out</span></label>
+            </div>
+          </fieldset>
+
+          <fieldset class="project-options">
+            <legend>What does success mean to you?</legend>
+            <div class="option-chips">
+              <label class="option-chip"><input type="checkbox" name="success" value="Launch something new"><span>Launch something new</span></label>
+              <label class="option-chip"><input type="checkbox" name="success" value="Grow an existing brand"><span>Grow an existing brand</span></label>
+              <label class="option-chip"><input type="checkbox" name="success" value="Get more visibility"><span>Get more visibility</span></label>
+              <label class="option-chip"><input type="checkbox" name="success" value="Reach the right audience"><span>Reach the right audience</span></label>
+              <label class="option-chip"><input type="checkbox" name="success" value="Build stronger brand relationships"><span>Build stronger brand relationships</span></label>
+              <label class="option-chip"><input type="checkbox" name="success" value="Something more..." data-reveals="success-other"><span>Something more...</span></label>
+            </div>
+            <label class="project-field option-other" id="success-other" hidden>
+              <span class="visually-hidden">Something more</span>
+              <textarea name="successOther" rows="3" placeholder="Tell us what success looks like for you"></textarea>
+            </label>
+          </fieldset>
+
+          <div class="project-form-submit">
+            <button type="submit" class="pill-button gold">Send</button>
+            <p class="project-form-status" id="project-form-status" role="status" aria-live="polite"></p>
+          </div>
+        </form>
+
+        <aside class="hate-forms">
+          <h2>In case you hate forms...</h2>
+          <p>Kindly email at <a href="mailto:contactus@thatgoodmedia.org">contactus@thatgoodmedia.org</a> to tell us what you are working on. We will take it from there.</p>
+        </aside>
       </div>
     </section>
 
@@ -69,20 +147,19 @@
   <footer class="footer">
       <div class="footer-cta">
         <div class="footer-cta-card">
-          <h4>Newsletter</h4>
-          <p class="footer-cta-title">Stories, insights and opportunities from That Good Media, straight to your inbox.</p>
-          <!-- TODO: replace action with the Mailchimp embedded form URL (…list-manage.com/subscribe/post?u=…&id=…) -->
-          <form class="newsletter-form" action="#mailchimp-form-url" method="post" target="_blank" novalidate>
+          <h4>That Good Scoop</h4>
+          <p class="footer-cta-title">Subscribe to That Good Scoop! Our bi-weekly drop of fresh ideas on PR, branding, influencer marketing, growth, plus latest industry news, and loads of fun.</p>
+          <form class="newsletter-form" action="https://thatgoodmedia.us6.list-manage.com/subscribe/post?u=6b8bed19071e6b182c1cb8ed9&amp;id=c7d3b25a07&amp;f_id=00991de2f0" method="post" target="_blank">
             <label class="visually-hidden" for="newsletter-email">Email address</label>
             <input type="email" name="EMAIL" id="newsletter-email" placeholder="Your email address" autocomplete="email" required>
-            <div class="visually-hidden" aria-hidden="true"><input type="text" name="b_honeypot" tabindex="-1" value=""></div>
+            <div class="visually-hidden" aria-hidden="true"><input type="text" name="b_6b8bed19071e6b182c1cb8ed9_c7d3b25a07" tabindex="-1" value=""></div>
             <button type="submit" class="pill-button gold">Subscribe</button>
           </form>
         </div>
         <div class="footer-cta-card">
           <h4>Influencer Partnership Network</h4>
-          <p class="footer-cta-title">Are you a creator? Join the IPN to partner with brands on campaigns that fit your voice.</p>
-          <a class="pill-button footer-cta-button" href="https://forms.cloud.microsoft/r/AKnhxa2GSM" target="_blank" rel="noopener noreferrer">Join the IPN <span aria-hidden="true">&rarr;</span></a>
+          <p class="footer-cta-title">Creators! Your influence deserves the right opportunities. Tap into relevant brand partnerships, events, activations and more.</p>
+          <a class="pill-button footer-cta-button" href="https://forms.cloud.microsoft/r/AKnhxa2GSM" target="_blank" rel="noopener noreferrer">Join the Network <span aria-hidden="true">&rarr;</span></a>
         </div>
       </div>
       <div class="footer-grid">
@@ -126,6 +203,80 @@
     </footer>
   <script src="assets/js/nav.js"></script>
   <script src="assets/js/reveal.js"></script>
+  <script>
+  (function () {
+    // TODO: paste the Power Automate "When an HTTP request is received" URL here.
+    // Until it is set, submissions open the visitor's email app addressed to contactus@.
+    var ENDPOINT = '';
+    var form = document.getElementById('project-form');
+    if (!form) return;
+    var status = document.getElementById('project-form-status');
+    var button = form.querySelector('button[type="submit"]');
+
+    form.querySelectorAll('[data-reveals]').forEach(function (box) {
+      var target = document.getElementById(box.getAttribute('data-reveals'));
+      box.addEventListener('change', function () {
+        target.hidden = !box.checked;
+        if (box.checked) target.querySelector('input, textarea').focus();
+      });
+    });
+
+    function picked(name) {
+      return Array.from(form.querySelectorAll('input[name="' + name + '"]:checked'))
+        .map(function (el) { return el.value; }).join(', ');
+    }
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var name = form.elements.name, email = form.elements.email;
+      if (!name.value.trim()) { status.textContent = 'Please tell us your name.'; name.focus(); return; }
+      if (!email.checkValidity() || !email.value.trim()) { status.textContent = 'Please enter a valid email address.'; email.focus(); return; }
+
+      var data = {
+        name: name.value.trim(),
+        email: email.value.trim(),
+        phone: form.elements.phone.value.trim(),
+        project: form.elements.project.value.trim(),
+        services: picked('services'),
+        servicesOther: form.elements.servicesOther.value.trim(),
+        help: picked('help'),
+        success: picked('success'),
+        successOther: form.elements.successOther.value.trim(),
+        submittedAt: new Date().toISOString()
+      };
+
+      if (!ENDPOINT) {
+        var body = [
+          'Name: ' + data.name, 'Email: ' + data.email, 'Phone: ' + data.phone, '',
+          'About the project:', data.project, '',
+          'What we need: ' + data.services + (data.servicesOther ? ' (' + data.servicesOther + ')' : ''),
+          'How you can help: ' + data.help,
+          'Success means: ' + data.success + (data.successOther ? ' (' + data.successOther + ')' : '')
+        ].join('\n');
+        window.location.href = 'mailto:contactus@thatgoodmedia.org?subject=' +
+          encodeURIComponent('New project enquiry – ' + data.name) + '&body=' + encodeURIComponent(body);
+        return;
+      }
+
+      button.disabled = true;
+      status.textContent = 'Sending...';
+      fetch(ENDPOINT, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data)
+      }).then(function (res) {
+        if (!res.ok) throw new Error(res.status);
+        form.reset();
+        form.querySelectorAll('.option-other').forEach(function (el) { el.hidden = true; });
+        status.textContent = 'Thank you! We have received your details and will be in touch shortly.';
+      }).catch(function () {
+        status.innerHTML = 'Sorry, something went wrong. Please email us at <a href="mailto:contactus@thatgoodmedia.org">contactus@thatgoodmedia.org</a>.';
+      }).finally(function () {
+        button.disabled = false;
+      });
+    });
+  })();
+  </script>
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   <script>
   (function () {
