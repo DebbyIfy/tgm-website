@@ -2157,3 +2157,16 @@ body:has(.announce-bar) { --announce-h: 41px; }
   color: var(--muted);
   font-size: 13px;
 }
+.blog-byline .blog-byline-initials {
+  flex: 0 0 44px;
+  width: 44px;
+  height: 44px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--purple);
+  color: var(--white);
+  font-size: 15px;
+  font-weight: 800;
+  letter-spacing: .04em;
+}
