@@ -2170,3 +2170,12 @@ body:has(.announce-bar) { --announce-h: 41px; }
   font-weight: 800;
   letter-spacing: .04em;
 }
+
+.blog-body ul {
+  margin: 0 0 22px;
+  padding-left: 22px;
+  color: #3d3a34;
+  font-size: 18px;
+  line-height: 1.7;
+}
+.blog-body li { margin-bottom: 8px; }
